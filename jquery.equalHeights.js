@@ -39,4 +39,4 @@
 
 // Usage -> Call equalHeights on the container(s) and enjoy the resulting height sameness...
 $('#container1').equalHeights();
-$('#container2').equalHeights();
+
