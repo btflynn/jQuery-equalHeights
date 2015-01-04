@@ -50,4 +50,4 @@
 })(jQuery, window, document);
 
 // Basic Usage -> Call equalHeights on any container and enjoy the resulting height sameness on all its children with class="equal-heights"...
-$('#myContainer').equalHeights();
+//$('#myContainer').equalHeights();
