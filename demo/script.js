@@ -22,19 +22,19 @@
           tallest_child_height = child_height;
         }
       }
-      children.height(tallest_child_height);
+      children.height(tallest_child_height); 
     };
 
     // Run initializer
     base.init();
-  };
+  }
 
   $.fn.equalHeights = function(){
     return this.each(function(){
       (new $.equalHeights(this));
     });
   };
-
+    
 })(jQuery, window, document);
 
 // Basic Usage -> Call equalHeights on any container and enjoy the resulting height sameness on all its children with class="equal-heights"...
@@ -45,7 +45,7 @@
 // DEMO CODE //
 var evaluateHeights = function(){
   var $height_reports = $('.height-report');
-
+  
   for(var i=0; i < $height_reports.length; i++) {
     var $this = $height_reports.eq(i),
         $parent = $this.closest('.equal-heights'),
@@ -69,6 +69,3 @@ $('body').on('equalized', function(){
   evaluateHeights();
   $columns.addClass('equalized');
 });
-
-
-
