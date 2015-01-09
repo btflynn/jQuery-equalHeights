@@ -1,8 +1,8 @@
 
+// Demo Styles
 body {
   background: #3A394A;
 }
-// Demo Styles
 .wrap {
   max-width: 960px;
   margin: 0 auto;
@@ -45,7 +45,7 @@ h1 {
 }
 .trigger {
   display: block;
-  margin: 70px auto 0;
+  margin: 70px auto 20px;
   outline: none;
   border: none;
   background: #777DA7;
@@ -54,6 +54,30 @@ h1 {
   cursor: pointer;
   color:  #F4FAFF;
   border-radius: 25px;
+}
+
+.github {
+  position: relative;
+  display: block;
+  padding: 10px;
+  width: 150px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: right;
+   &:hover {
+    text-decoration: none;
+    color: #777DA7;
+  }
+  &:before {
+    content: "";
+    position: absolute;  
+    top: 5px;
+    left: 0;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2783/GitHub-Mark-Light-32px.png) no-repeat;
+  }
 }
 
 // Helpers
@@ -70,4 +94,3 @@ h1 {
     clear: both;
   }
 }
-
